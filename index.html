@@ -26,14 +26,13 @@
     </a>
     <nav class="nav__links" aria-label="Navigation principale">
       <a href="#transferts">Transferts</a>
-      <a href="#compte">Compte & carte</a>
-      <a href="#comment">Comment ça marche</a>
+      <a href="#compte">Compte</a>
+      <a href="#carte">Carte</a>
       <a href="#securite">Sécurité</a>
       <a href="#faq">FAQ</a>
     </nav>
     <div class="nav__cta">
-      <a class="btn btn--ghost" href="#telecharger">Se connecter</a>
-      <a class="btn btn--primary" href="#telecharger">Télécharger l'app</a>
+      <a class="btn btn--dark" href="#telecharger">Télécharger</a>
     </div>
     <button class="nav__burger" aria-label="Ouvrir le menu" aria-expanded="false" data-burger>
       <span></span><span></span>
@@ -41,290 +40,192 @@
   </div>
   <div class="nav__mobile" data-mobile>
     <a href="#transferts">Transferts</a>
-    <a href="#compte">Compte & carte</a>
-    <a href="#comment">Comment ça marche</a>
+    <a href="#compte">Compte</a>
+    <a href="#carte">Carte</a>
     <a href="#securite">Sécurité</a>
     <a href="#faq">FAQ</a>
-    <a class="btn btn--primary" href="#telecharger">Télécharger l'app</a>
+    <a class="btn btn--dark" href="#telecharger">Télécharger</a>
   </div>
 </header>
 
 <main>
 
-  <!-- HERO -->
   <section class="hero">
-    <div class="wrap hero__grid">
-      <div class="hero__copy">
-        <p class="eyebrow">Bénin <span class="arrow">→</span> Europe</p>
-        <h1>Plus qu'un outil <em>de paiement.</em></h1>
-        <p class="lead">Envoyez de l'argent du Bénin vers l'Europe depuis MTN MoMo, Moov Money ou Celtiis Cash. Taux fixe, RIB européen et carte Visa — tout dans une seule app.</p>
+    <div class="wrap">
+      <h1 class="hero__title">Du Bénin<br>vers l'Europe.<br><span>Sans détour.</span></h1>
+      <div class="hero__row">
+        <p class="hero__lead">Envoyez de l'argent depuis votre Mobile Money, recevez-le sur un compte européen et dépensez-le avec une carte Visa. Une seule app, un taux fixe.</p>
         <div class="hero__actions" id="telecharger">
-          <a class="store" href="#" aria-label="Télécharger sur l'App Store">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.7c.02 2.6 2.28 3.47 2.3 3.48-.02.06-.36 1.24-1.19 2.45-.72 1.05-1.46 2.1-2.64 2.12-1.15.02-1.52-.68-2.84-.68-1.32 0-1.73.66-2.82.7-1.13.04-2-1.14-2.72-2.18-1.48-2.14-2.6-6.05-1.09-8.69.75-1.31 2.1-2.14 3.56-2.16 1.11-.02 2.16.75 2.84.75.68 0 1.95-.93 3.29-.79.56.02 2.13.23 3.14 1.7-.08.05-1.87 1.1-1.85 3.3zM14.2 6.26c.6-.73 1.01-1.74.9-2.76-.87.04-1.92.58-2.55 1.31-.56.65-1.05 1.68-.92 2.68.97.07 1.96-.5 2.57-1.23z"/></svg>
-            <span><small>Télécharger sur</small>App Store</span>
-          </a>
-          <a class="store" href="#" aria-label="Disponible sur Google Play">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.3 13.9 12 3.6 21.7c-.3-.2-.5-.6-.5-1.1V3.4c0-.5.2-.9.5-1.1zm1.2-.3c.2 0 .5.1.8.3l11.1 6.3-2.7 2.6L4.8 2zm12.9 7.3 3.1 1.8c1 .6 1 1.5 0 2.1l-3.1 1.8-3-3 3-2.7zM4.8 22l9.2-9.1 2.7 2.6L5.6 21.7c-.3.2-.6.3-.8.3z"/></svg>
-            <span><small>Disponible sur</small>Google Play</span>
-          </a>
+          <a class="btn btn--dark btn--lg" href="#">Télécharger l'app</a>
+          <a class="link" href="#comment">Comment ça marche <span>→</span></a>
         </div>
-        <ul class="hero__proof">
-          <li><strong>1 € = 655,957 F</strong> taux fixe</li>
-          <li><strong>Quelques minutes</strong> pour un transfert</li>
-          <li><strong>Visa</strong> acceptée partout</li>
-        </ul>
       </div>
+    </div>
 
-      <div class="hero__visual" aria-hidden="true">
+    <div class="wrap">
+      <div class="stage" aria-hidden="true">
+        <p class="stage__note stage__note--l">1 € = 655,957 F<br><span>Taux fixe, garanti</span></p>
         <div class="phone">
           <div class="phone__screen">
             <div class="ph-top">
-              <span class="ph-avatar">E</span>
               <svg class="ph-mark" viewBox="0 0 100 128"><use href="#mark"/></svg>
-              <span class="ph-bell"></span>
+              <span class="ph-avatar">E</span>
             </div>
-            <p class="ph-label">Solde Senou</p>
-            <p class="ph-balance">€3 450,20</p>
+            <p class="ph-label">Solde</p>
+            <p class="ph-balance">3 450,20 €</p>
             <p class="ph-sub">≈ 2 263 051 F CFA</p>
             <div class="ph-actions">
               <span><i>↑</i>Envoyer</span>
               <span><i>↓</i>Recevoir</span>
               <span><i>⇄</i>Convertir</span>
-              <span><i>▭</i>Carte</span>
             </div>
             <div class="ph-card">
-              <div class="ph-card__row"><span>Carte Visa · RIB européen</span><b>VISA</b></div>
-              <div class="ph-card__num">•••• •••• •••• 9512</div>
-              <div class="ph-card__row"><span>Ezékiel A.</span><span>12/28</span></div>
+              <div class="ph-card__row"><svg viewBox="0 0 100 128"><use href="#mark"/></svg><b>VISA</b></div>
+              <div class="ph-card__num">•••• 9512</div>
             </div>
-            <p class="ph-label">Derniers mouvements</p>
             <ul class="ph-list">
-              <li><span class="dot dot--mtn"></span><div><b>Dépôt MTN MoMo</b><small>Aujourd'hui · 14:02</small></div><em>+150 000 F</em></li>
-              <li><span class="dot dot--eu"></span><div><b>Envoi vers Paris</b><small>Hier · 19:40</small></div><em>−228,67 €</em></li>
-              <li><span class="dot dot--visa"></span><div><b>Carte · Amazon.fr</b><small>Hier · 10:12</small></div><em>−39,90 €</em></li>
+              <li><div><b>Dépôt MTN MoMo</b><small>Aujourd'hui</small></div><em>+150 000 F</em></li>
+              <li><div><b>Envoi · Paris</b><small>Hier</small></div><em>−228,67 €</em></li>
+              <li><div><b>Amazon.fr</b><small>Hier</small></div><em>−39,90 €</em></li>
             </ul>
           </div>
         </div>
-
-        <div class="float float--rate">
-          <small>Taux fixe</small>
-          <b>1 € = 655,957 F</b>
-        </div>
-        <div class="float float--sent">
-          <span class="check">✓</span>
-          <div><b>228,67 € envoyés</b><small>Reçus à Paris en 3 min</small></div>
-        </div>
+        <p class="stage__note stage__note--r">228,67 € envoyés<br><span>Reçus à Paris en 3 min</span></p>
       </div>
     </div>
   </section>
 
-  <!-- OPERATORS -->
-  <section class="ops">
-    <div class="wrap">
-      <p class="ops__label">Alimentez votre compte depuis votre Mobile Money</p>
-      <ul class="ops__list">
-        <li><span class="dot dot--mtn"></span>MTN MoMo</li>
-        <li><span class="dot dot--moov"></span>Moov Money</li>
-        <li><span class="dot dot--celtiis"></span>Celtiis Cash</li>
-        <li class="ops__sep" aria-hidden="true"></li>
-        <li><span class="dot dot--visa"></span>Visa</li>
-        <li><span class="dot dot--eu"></span>IBAN européen</li>
+  <section class="strip">
+    <div class="wrap strip__in">
+      <p>Alimentez votre compte depuis</p>
+      <ul>
+        <li>MTN MoMo</li>
+        <li>Moov Money</li>
+        <li>Celtiis Cash</li>
       </ul>
     </div>
   </section>
 
-  <!-- FEATURES -->
-  <section class="features" id="transferts">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Tout ce qu'il faut pour vivre <em>entre deux continents.</em></h2>
-        <p>Une app pensée pour la diaspora, les étudiants, les commerçants et tous ceux qui envoient ou reçoivent de l'argent entre le Bénin et l'Europe.</p>
+  <section class="feature" id="transferts">
+    <div class="wrap feature__grid">
+      <div class="feature__copy rv">
+        <p class="index">01 — Transferts</p>
+        <h2>Un taux fixe.<br>Pas de surprise.</h2>
+        <p>1 € = 655,957 F CFA, toujours. Ce que vous voyez à l'écran est ce que votre proche reçoit en Europe, en quelques minutes, directement depuis votre Mobile Money.</p>
+        <a class="link" href="#telecharger">Envoyer de l'argent <span>→</span></a>
       </div>
-
-      <div class="bento">
-        <article class="card card--tall rv">
-          <div class="card__text">
-            <span class="chip">Transferts</span>
-            <h3>Du Bénin vers l'Europe, en quelques minutes.</h3>
-            <p>Rechargez depuis MTN MoMo, Moov Money ou Celtiis Cash, puis envoyez vers n'importe quel IBAN européen. Le montant reçu est connu à l'avance : aucun frais caché.</p>
-          </div>
-          <div class="transfer-demo" data-converter>
-            <div class="td-row">
-              <label><small>Vous envoyez</small>
-                <span class="td-input"><input type="text" inputmode="decimal" value="150 000" data-xof aria-label="Montant en francs CFA" /><b>XOF</b></span>
-              </label>
-              <img class="td-flag" src="assets/flag-benin.svg" alt="Bénin" width="36" height="36" />
+      <div class="feature__visual rv">
+        <div class="conv" data-converter>
+          <div class="conv__row">
+            <label for="xof">Vous envoyez</label>
+            <div class="conv__field">
+              <input id="xof" type="text" inputmode="decimal" value="150 000" data-xof autocomplete="off" />
+              <span class="conv__cur"><img src="assets/flag-benin.svg" alt="" width="20" height="20">XOF</span>
             </div>
-            <div class="td-mid"><span>Taux fixe · 1 € = 655,957 F</span><i>↓</i></div>
-            <div class="td-row">
-              <label><small>Le destinataire reçoit</small>
-                <span class="td-input"><output data-eur>228,67</output><b>EUR</b></span>
-              </label>
-              <img class="td-flag" src="assets/flag-eu.svg" alt="Europe" width="36" height="36" />
+          </div>
+          <div class="conv__row">
+            <label>Ils reçoivent</label>
+            <div class="conv__field">
+              <output data-eur>228,67</output>
+              <span class="conv__cur"><img src="assets/flag-eu.svg" alt="" width="20" height="20">EUR</span>
             </div>
-            <button class="btn btn--primary btn--block" type="button">Envoyer maintenant</button>
           </div>
-        </article>
-
-        <article class="card card--navy rv" id="compte">
-          <span class="chip chip--light">Compte</span>
-          <h3>Un RIB européen, sans banque européenne.</h3>
-          <p>Recevez votre salaire, un loyer ou un virement comme si vous aviez un compte en Europe. Votre IBAN est à votre nom, dès l'ouverture.</p>
-          <div class="iban">
-            <small>IBAN</small>
-            <b>FR76 •••• •••• •••• 9512</b>
-            <span>Ezékiel Agossou</span>
-          </div>
-        </article>
-
-        <article class="card card--visa rv">
-          <span class="chip">Carte</span>
-          <h3>Une carte Visa liée à votre compte.</h3>
-          <p>Payez en ligne et en boutique partout dans le monde, gelez-la en un geste, suivez chaque dépense en temps réel.</p>
-          <div class="visa">
-            <div class="visa__top">
-              <svg viewBox="0 0 500 128" class="visa__logo"><use href="#logo"/></svg>
-              <span class="visa__chip"></span>
-            </div>
-            <div class="visa__num">7412 8523 9631 9512</div>
-            <div class="visa__bottom"><span>12/28</span><b>VISA</b></div>
-          </div>
-        </article>
-
-        <article class="card card--soft rv">
-          <span class="chip">Taux fixe</span>
-          <h3>1 € = 655,957 F. <br />Aujourd'hui, demain, toujours.</h3>
-          <p>Le franc CFA est arrimé à l'euro : nous vous garantissons ce taux officiel sur chaque transfert. Ce que vous voyez est ce qui arrive.</p>
-        </article>
-
-        <article class="card card--soft rv">
-          <span class="chip">Multi-devises</span>
-          <h3>XOF, EUR et USD dans un seul portefeuille.</h3>
-          <p>Gardez vos soldes séparés, convertissez quand vous voulez, dépensez dans la bonne devise sans frais de change surprise.</p>
-          <div class="wallets">
-            <span><em>XOF</em>2 263 051 F</span>
-            <span><em>EUR</em>3 450,20 €</span>
-            <span><em>USD</em>120,00 $</span>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW -->
-  <section class="how" id="comment">
-    <div class="wrap">
-      <div class="section-head section-head--center">
-        <h2>Prêt en <em>trois minutes.</em></h2>
-        <p>Pas de rendez-vous en agence, pas de paperasse. Juste votre téléphone.</p>
-      </div>
-      <ol class="steps">
-        <li class="rv">
-          <span class="steps__n">1</span>
-          <h3>Ouvrez votre compte</h3>
-          <p>Téléchargez Senou, scannez votre pièce d'identité et prenez un selfie. C'est tout.</p>
-        </li>
-        <li class="rv">
-          <span class="steps__n">2</span>
-          <h3>Rechargez via Mobile Money</h3>
-          <p>MTN MoMo, Moov Money ou Celtiis Cash : votre solde est crédité instantanément.</p>
-        </li>
-        <li class="rv">
-          <span class="steps__n">3</span>
-          <h3>Envoyez, recevez, payez</h3>
-          <p>Virements vers l'Europe à taux fixe, RIB à votre nom, carte Visa prête à l'emploi.</p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- SECURITY -->
-  <section class="security" id="securite">
-    <div class="wrap security__grid">
-      <div class="security__copy">
-        <span class="chip chip--light">Sécurité</span>
-        <h2>Votre argent, <em>protégé à chaque étape.</em></h2>
-        <p>Senou est construit par Acxa Technology sur une infrastructure de paiement régulée. Chaque opération est chiffrée, chaque connexion vérifiée.</p>
-        <ul class="security__list">
-          <li><b>Fonds cantonnés</b><span>Votre argent est séparé des fonds de l'entreprise et conservé chez des partenaires régulés.</span></li>
-          <li><b>Biométrie & code PIN</b><span>Déverrouillez l'app avec votre empreinte ou votre visage ; validez chaque envoi.</span></li>
-          <li><b>Carte gelable en un geste</b><span>Perdue ? Gelez-la instantanément depuis l'app, puis réactivez-la quand vous voulez.</span></li>
-          <li><b>Alertes en temps réel</b><span>Une notification pour chaque mouvement, entrée comme sortie.</span></li>
-        </ul>
-      </div>
-      <div class="security__visual" aria-hidden="true">
-        <svg class="security__mark" viewBox="0 0 100 128"><use href="#mark"/></svg>
-        <div class="shield">
-          <div class="shield__row"><span>Chiffrement</span><b>AES-256</b></div>
-          <div class="shield__row"><span>Connexion</span><b>Face ID · PIN</b></div>
-          <div class="shield__row"><span>Carte</span><b class="ok">Active</b></div>
-          <div class="shield__row"><span>Dernière alerte</span><b>il y a 2 min</b></div>
+          <p class="conv__meta">Taux fixe 1 € = 655,957 F · Arrivée en quelques minutes</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIAL / NUMBERS -->
-  <section class="numbers">
-    <div class="wrap numbers__grid">
-      <div class="num rv"><b>655,957</b><span>F CFA pour 1 €, garanti sur chaque transfert</span></div>
-      <div class="num rv"><b>3 min</b><span>pour qu'un virement arrive en Europe</span></div>
-      <div class="num rv"><b>3</b><span>opérateurs Mobile Money acceptés dès le lancement</span></div>
-      <div class="num rv"><b>0 €</b><span>d'ouverture et de tenue de compte</span></div>
+  <section class="feature feature--alt" id="compte">
+    <div class="wrap feature__grid">
+      <div class="feature__visual rv">
+        <div class="iban">
+          <p class="iban__label">Compte européen</p>
+          <p class="iban__val">FR76 3000 4000 0312 3456 7890 143</p>
+          <div class="iban__row"><span>Titulaire</span><b>Ezékiel Adjovi</b></div>
+          <div class="iban__row"><span>BIC</span><b>SNOUFRPP</b></div>
+          <div class="iban__row"><span>Devise</span><b>EUR</b></div>
+        </div>
+      </div>
+      <div class="feature__copy rv">
+        <p class="index">02 — Compte</p>
+        <h2>Un RIB européen,<br>depuis Cotonou.</h2>
+        <p>Recevez un salaire, un loyer ou un virement comme n'importe quel résident européen. Pas de rendez-vous en agence, pas de paperasse : votre téléphone suffit.</p>
+        <a class="link" href="#telecharger">Ouvrir un compte <span>→</span></a>
+      </div>
     </div>
   </section>
 
-  <!-- FAQ -->
+  <section class="feature" id="carte">
+    <div class="wrap feature__grid">
+      <div class="feature__copy rv">
+        <p class="index">03 — Carte</p>
+        <h2>Une Visa acceptée<br>partout.</h2>
+        <p>Payez en ligne et en boutique dans le monde entier. Bloquez, débloquez et suivez chaque dépense en temps réel depuis l'app.</p>
+        <a class="link" href="#telecharger">Commander ma carte <span>→</span></a>
+      </div>
+      <div class="feature__visual rv">
+        <div class="card">
+          <svg class="card__mark" viewBox="0 0 100 128"><use href="#mark"/></svg>
+          <p class="card__num">•••• •••• •••• 9512</p>
+          <div class="card__row"><span>Ezékiel Adjovi</span><b>VISA</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="wrap stats__grid">
+      <div class="rv"><b>655,957</b><span>F CFA pour 1 €, fixe</span></div>
+      <div class="rv"><b>3 min</b><span>Durée moyenne d'un transfert</span></div>
+      <div class="rv"><b>3</b><span>Opérateurs Mobile Money</span></div>
+      <div class="rv"><b>24/7</b><span>Disponible, sans agence</span></div>
+    </div>
+  </section>
+
+  <section class="dark" id="securite">
+    <div class="wrap">
+      <p class="index index--light">Sécurité</p>
+      <h2 class="dark__title rv">Votre argent,<br>sous bonne garde.</h2>
+      <div class="dark__grid">
+        <div class="rv"><h3>Fonds cantonnés</h3><p>Vos dépôts sont séparés des fonds de l'entreprise, chez un établissement partenaire agréé en Europe.</p></div>
+        <div class="rv"><h3>Chiffrement de bout en bout</h3><p>Chaque transaction est chiffrée et authentifiée. Vos données ne circulent jamais en clair.</p></div>
+        <div class="rv"><h3>Authentification forte</h3><p>Biométrie ou code personnel à chaque opération sensible. Carte bloquable en un geste.</p></div>
+        <div class="rv"><h3>Conformité</h3><p>KYC et lutte anti-blanchiment conformes aux standards européens et de la BCEAO.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="comment">
+    <div class="wrap">
+      <h2 class="how__title rv">Prêt en trois étapes.</h2>
+      <ol class="how__list">
+        <li class="rv"><span>01</span><h3>Créez votre compte</h3><p>Téléchargez l'app, scannez votre pièce d'identité, prenez une photo. Deux minutes.</p></li>
+        <li class="rv"><span>02</span><h3>Alimentez-le</h3><p>Depuis MTN MoMo, Moov Money ou Celtiis Cash. Le solde apparaît instantanément.</p></li>
+        <li class="rv"><span>03</span><h3>Envoyez, recevez, payez</h3><p>Transférez en Europe, recevez sur votre RIB et dépensez avec votre Visa.</p></li>
+      </ol>
+    </div>
+  </section>
+
   <section class="faq" id="faq">
     <div class="wrap faq__grid">
-      <div class="section-head">
-        <h2>Questions <em>fréquentes.</em></h2>
-        <p>Une autre question ? Écrivez-nous à <a href="mailto:contact@senou.app">contact@senou.app</a>.</p>
-      </div>
+      <h2 class="rv">Questions fréquentes</h2>
       <div class="faq__list">
-        <details open>
-          <summary>Qui peut ouvrir un compte Senou ?</summary>
-          <p>Toute personne majeure résidant au Bénin, munie d'une pièce d'identité valide (CIP, passeport ou carte d'identité). L'ouverture se fait entièrement depuis l'app.</p>
-        </details>
-        <details>
-          <summary>Comment recharger mon compte ?</summary>
-          <p>Depuis votre portefeuille MTN MoMo, Moov Money ou Celtiis Cash. Le solde est crédité en francs CFA puis converti au taux fixe quand vous envoyez vers l'Europe.</p>
-        </details>
-        <details>
-          <summary>Le taux est-il vraiment fixe ?</summary>
-          <p>Oui. Le franc CFA est arrimé à l'euro à 655,957 F pour 1 €. Nous appliquons ce taux officiel sur tous vos transferts, sans marge cachée.</p>
-        </details>
-        <details>
-          <summary>Comment fonctionne le RIB européen ?</summary>
-          <p>À l'ouverture, vous recevez un IBAN à votre nom. Vous pouvez le communiquer à un employeur, un propriétaire ou un proche en Europe pour recevoir des virements directement sur Senou.</p>
-        </details>
-        <details>
-          <summary>Où puis-je utiliser la carte Visa ?</summary>
-          <p>Partout où Visa est acceptée : en ligne, en boutique et sur les abonnements (streaming, logiciels, e-commerce). Vous pouvez la geler ou la débloquer à tout moment.</p>
-        </details>
-        <details>
-          <summary>Qui est derrière Senou ?</summary>
-          <p>Senou est un produit d'Acxa Technology, une fintech qui construit des infrastructures de paiement et de digital banking pour l'Afrique de l'Ouest et l'Europe.</p>
-        </details>
+        <details class="rv"><summary>Qui peut ouvrir un compte Senou ?</summary><p>Toute personne majeure résidant au Bénin, munie d'une pièce d'identité valide et d'un numéro Mobile Money.</p></details>
+        <details class="rv"><summary>Le taux de change est-il vraiment fixe ?</summary><p>Oui. 1 € = 655,957 F CFA, la parité officielle. Le montant affiché est le montant reçu.</p></details>
+        <details class="rv"><summary>Combien de temps prend un transfert ?</summary><p>Quelques minutes en général, moins de 24 h au maximum selon la banque réceptrice.</p></details>
+        <details class="rv"><summary>Puis-je recevoir de l'argent depuis l'Europe ?</summary><p>Oui, grâce à votre RIB européen. Un virement SEPA arrive sur votre compte comme pour n'importe quel compte européen.</p></details>
+        <details class="rv"><summary>Où la carte Visa est-elle acceptée ?</summary><p>Partout où Visa est acceptée, en ligne et en boutique, au Bénin comme à l'étranger.</p></details>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
   <section class="cta">
-    <div class="wrap cta__box rv">
-      <svg class="cta__mark" viewBox="0 0 100 128" aria-hidden="true"><use href="#mark"/></svg>
-      <h2>Rejoignez Senou dès aujourd'hui.</h2>
-      <p>Ouvrez votre compte en trois minutes, rechargez depuis votre Mobile Money et envoyez votre premier transfert à taux fixe.</p>
-      <div class="hero__actions">
-        <a class="store store--light" href="#">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.7c.02 2.6 2.28 3.47 2.3 3.48-.02.06-.36 1.24-1.19 2.45-.72 1.05-1.46 2.1-2.64 2.12-1.15.02-1.52-.68-2.84-.68-1.32 0-1.73.66-2.82.7-1.13.04-2-1.14-2.72-2.18-1.48-2.14-2.6-6.05-1.09-8.69.75-1.31 2.1-2.14 3.56-2.16 1.11-.02 2.16.75 2.84.75.68 0 1.95-.93 3.29-.79.56.02 2.13.23 3.14 1.7-.08.05-1.87 1.1-1.85 3.3zM14.2 6.26c.6-.73 1.01-1.74.9-2.76-.87.04-1.92.58-2.55 1.31-.56.65-1.05 1.68-.92 2.68.97.07 1.96-.5 2.57-1.23z"/></svg>
-          <span><small>Télécharger sur</small>App Store</span>
-        </a>
-        <a class="store store--light" href="#">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.3 13.9 12 3.6 21.7c-.3-.2-.5-.6-.5-1.1V3.4c0-.5.2-.9.5-1.1zm1.2-.3c.2 0 .5.1.8.3l11.1 6.3-2.7 2.6L4.8 2zm12.9 7.3 3.1 1.8c1 .6 1 1.5 0 2.1l-3.1 1.8-3-3 3-2.7zM4.8 22l9.2-9.1 2.7 2.6L5.6 21.7c-.3.2-.6.3-.8.3z"/></svg>
-          <span><small>Disponible sur</small>Google Play</span>
-        </a>
+    <div class="wrap">
+      <h2 class="rv">Plus qu'un outil<br>de paiement.</h2>
+      <div class="cta__actions rv">
+        <a class="btn btn--light btn--lg" href="#">App Store</a>
+        <a class="btn btn--outline btn--lg" href="#">Google Play</a>
       </div>
     </div>
   </section>
@@ -333,36 +234,26 @@
 
 <footer class="footer">
   <div class="wrap footer__grid">
-    <div class="footer__brand">
-      <svg class="brand__logo" viewBox="0 0 500 128" aria-hidden="true"><use href="#logo"/></svg>
-      <p>Plus qu'un outil de paiement. Transferts Bénin → Europe, RIB européen et carte Visa, depuis votre Mobile Money.</p>
-    </div>
-    <div class="footer__col">
-      <b>Produit</b>
-      <a href="#transferts">Transferts</a>
-      <a href="#compte">Compte & RIB</a>
-      <a href="#compte">Carte Visa</a>
-      <a href="#comment">Comment ça marche</a>
-    </div>
-    <div class="footer__col">
-      <b>Entreprise</b>
-      <a href="https://www.acxa.io/" target="_blank" rel="noopener">Acxa Technology</a>
-      <a href="mailto:contact@senou.app">Contact</a>
-      <a href="#">Carrières</a>
-    </div>
-    <div class="footer__col">
-      <b>Légal</b>
-      <a href="#">Conditions d'utilisation</a>
-      <a href="#">Confidentialité</a>
-      <a href="#">Tarifs</a>
-    </div>
+    <svg class="footer__logo" viewBox="0 0 500 128" aria-label="Senou"><use href="#logo"/></svg>
+    <ul>
+      <li><a href="#transferts">Transferts</a></li>
+      <li><a href="#compte">Compte</a></li>
+      <li><a href="#carte">Carte</a></li>
+      <li><a href="#securite">Sécurité</a></li>
+    </ul>
+    <ul>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="mailto:contact@senou.app">Contact</a></li>
+      <li><a href="#">Confidentialité</a></li>
+      <li><a href="#">Conditions</a></li>
+    </ul>
   </div>
   <div class="wrap footer__bottom">
-    <span>© <span data-year>2025</span> Senou. Un produit <a href="https://www.acxa.io/" target="_blank" rel="noopener">Acxa Technology</a>.</span>
-    <span>Senou n'est pas une banque. Les services de paiement sont fournis par des partenaires régulés.</span>
+    <p>© <span data-year>2025</span> Senou. Un produit <a href="https://www.acxa.io/" target="_blank" rel="noopener">Acxa Technology</a>.</p>
+    <p>Cotonou, Bénin</p>
   </div>
 </footer>
 
-<script src="js/main.js" defer></script>
+<script src="js/main.js"></script>
 </body>
 </html>
