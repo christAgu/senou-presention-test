@@ -136,7 +136,23 @@ h3{font-size:22px;letter-spacing:-.02em;line-height:1.2}
 .dark{background:var(--navy-deep);color:#fff;padding:clamp(80px,10vw,150px) 0}
 .dark__title{margin:20px 0 clamp(48px,6vw,88px)}
 .dark__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0 clamp(40px,6vw,96px)}
-.dark__grid div{padding:32px 0 40px;border-top:1px solid rgba(255,255,255,.22)}
+.dark__grid div{position:relative;padding:32px 0 40px}
+.dark__grid div::before{content:"";position:absolute;left:0;top:0;width:100%;height:1px;background:rgba(255,255,255,.22);transform:scaleX(0);transform-origin:left;transition:transform .9s cubic-bezier(.65,0,.35,1)}
+.dark__grid div.rv{opacity:1;transform:none}
+.dark__grid div .sicon,.dark__grid div h3,.dark__grid div p{opacity:0;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.dark__grid div .sicon{transform:scale(.6)}
+.dark__grid div h3,.dark__grid div p{transform:translateY(18px)}
+.dark__grid div.in::before{transform:scaleX(1)}
+.dark__grid div.in .sicon{opacity:1;transform:none;transition-delay:.25s}
+.dark__grid div.in h3{opacity:1;transform:none;transition-delay:.4s}
+.dark__grid div.in p{opacity:1;transform:none;transition-delay:.5s}
+.dark__grid div:nth-child(2)::before,.dark__grid div:nth-child(2) .sicon,.dark__grid div:nth-child(2) h3,.dark__grid div:nth-child(2) p{transition-delay:.18s}
+.dark__grid div:nth-child(3)::before,.dark__grid div:nth-child(3) .sicon,.dark__grid div:nth-child(3) h3,.dark__grid div:nth-child(3) p{transition-delay:.36s}
+.dark__grid div:nth-child(4)::before,.dark__grid div:nth-child(4) .sicon,.dark__grid div:nth-child(4) h3,.dark__grid div:nth-child(4) p{transition-delay:.54s}
+.dark__grid div.in:nth-child(2) .sicon{transition-delay:.43s}.dark__grid div.in:nth-child(2) h3{transition-delay:.58s}.dark__grid div.in:nth-child(2) p{transition-delay:.68s}
+.dark__grid div.in:nth-child(3) .sicon{transition-delay:.61s}.dark__grid div.in:nth-child(3) h3{transition-delay:.76s}.dark__grid div.in:nth-child(3) p{transition-delay:.86s}
+.dark__grid div.in:nth-child(4) .sicon{transition-delay:.79s}.dark__grid div.in:nth-child(4) h3{transition-delay:.94s}.dark__grid div.in:nth-child(4) p{transition-delay:1.04s}
+@media (prefers-reduced-motion:reduce){.dark__grid div::before,.dark__grid div .sicon,.dark__grid div h3,.dark__grid div p{opacity:1;transform:none;transition:none}}
 .dark__grid h3{margin-bottom:12px}
 .sicon{display:grid;place-items:center;width:64px;height:64px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);margin-bottom:24px}
 .sicon svg{width:30px;height:30px;fill:none;stroke:#fff;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
