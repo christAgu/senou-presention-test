@@ -63,7 +63,7 @@ h3{font-size:22px;letter-spacing:-.02em;line-height:1.2}
 .hero__lead{font-size:clamp(18px,1.6vw,22px);line-height:1.45;color:var(--mute);max-width:540px}
 .hero__actions{display:flex;align-items:center;gap:32px;justify-content:flex-end;flex-wrap:wrap}
 
-.stage{position:relative;margin-top:clamp(56px,8vw,112px);background:var(--navy);border-radius:var(--r);height:clamp(520px,58vw,760px);overflow:hidden;display:flex;justify-content:flex-start;align-items:flex-end;padding-left:clamp(32px,9%,130px)}
+.stage{position:relative;margin-top:clamp(56px,8vw,112px);background:var(--soft);border-radius:var(--r);height:clamp(520px,58vw,760px);overflow:hidden;display:flex;justify-content:flex-start;align-items:flex-end;padding-left:clamp(32px,9%,130px)}
 
 .phone{width:clamp(280px,30vw,360px);aspect-ratio:9/19;background:#000;border-radius:48px 48px 0 0;padding:12px 12px 0;transform:translateY(60px)}
 .phone__screen{background:#fff;border-radius:38px 38px 0 0;height:100%;padding:28px 22px;color:var(--ink);overflow:hidden}
@@ -208,7 +208,6 @@ h3{font-size:22px;letter-spacing:-.02em;line-height:1.2}
   .hero{padding-top:48px}
   .hero__title{font-size:clamp(44px,14vw,64px)}
   .stage{height:460px;border-radius:20px}
-  .phone{width:250px;transform:translateY(40px)}
   .stats__grid{grid-template-columns:1fr}
   .stats__grid div{border-left:0;padding:28px 0;border-top:1px solid var(--line)}
   .stats__grid div:first-child{border-top:0}
@@ -229,25 +228,42 @@ h3{font-size:22px;letter-spacing:-.02em;line-height:1.2}
 
 /* globe */
 .globe{position:absolute;right:-4%;top:50%;width:min(62%,700px);height:auto;transform:translateY(-50%);pointer-events:none}
-.globe__lines{fill:none;stroke:rgba(255,255,255,.3);stroke-width:1.2}
-.globe__ring{fill:none;stroke:rgba(170,182,230,.45);stroke-width:1;stroke-dasharray:4 14;transform-origin:400px 400px;animation:spin 90s linear infinite}
-.globe__track{fill:none;stroke:rgba(170,182,230,.35);stroke-width:1;stroke-dasharray:3 9}
-.coin circle{fill:#fff;stroke:rgba(255,255,255,.35);stroke-width:1.5}
-.coin text{font-family:"Onest",system-ui,sans-serif;font-size:19px;font-weight:600;fill:#fff}
-.coin--eur circle{fill:#2f6bff}
-.coin--xof circle{fill:#f2b705}
-.coin--usd circle{fill:#1fa661}
-.coin--gbp circle{fill:#8b5cf6}
-.stage .phone{position:relative;z-index:1}
+.globe__lines{fill:none;stroke:rgba(20,31,71,.22);stroke-width:1.2}
+.globe__ring{fill:none;stroke:rgba(20,31,71,.35);stroke-width:1;stroke-dasharray:4 14;transform-origin:400px 400px;animation:spin 90s linear infinite}
+.globe__track{fill:none;stroke:rgba(20,31,71,.25);stroke-width:1;stroke-dasharray:3 9}
+/* mochi coins */
+.coin circle{stroke:#15172b;stroke-width:2.5}
+.coin__in{fill:none;stroke-dasharray:4 5;stroke-width:1.5!important}
+.coin text{font-family:"Onest",system-ui,sans-serif;font-size:28px;font-weight:700;fill:#15172b}
+.coin__shine{fill:none;stroke:#fff;stroke-width:4;stroke-linecap:round}
+.coin--eur circle{fill:#ffe15c}
+.coin--xof circle{fill:#ffb3d6}
+.coin--usd circle{fill:#86d7ff}
+.coin--gbp circle{fill:#c7b5ff}
+.spark{fill:none;stroke:#15172b;stroke-width:2.5;stroke-linecap:round}
+/* mochi hand */
+.hand{position:relative;z-index:1;width:clamp(280px,30vw,360px)}
+.hand .phone{width:100%;transform:translateY(60px);border:3px solid #15172b;background:#15172b}
+.hand__back,.hand__front{position:absolute;left:-48%;bottom:-20%;width:200%;height:auto;pointer-events:none}
+.hand__back{z-index:0}
+.hand .phone{position:relative;z-index:1}
+.hand__front{z-index:2}
+.hand__skin{fill:#f3c6a5;stroke:#15172b;stroke-width:3;stroke-linejoin:round}
+.hand__sleeve{fill:#ffb3d6;stroke:#15172b;stroke-width:3}
+.hand__line{fill:none;stroke:#15172b;stroke-width:2.5;stroke-linecap:round}
 @keyframes spin{to{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.globe__ring{animation:none}}
 @media (max-width:1024px){
   .stage{justify-content:center;padding-left:0}
   .globe{right:auto;left:50%;top:-6%;width:min(96%,620px);transform:translateX(-50%)}
-  .phone{transform:translateY(120px)}
+  .hand{width:260px}
+  .hand .phone{transform:translateY(110px)}
 }
 @media (max-width:560px){
   .stage{height:520px}
   .globe{top:-2%;width:118%}
-  .phone{transform:translateY(190px)}
+  .hand{width:220px}
+  .hand .phone{transform:translateY(150px)}
+  .ph-balance{font-size:28px}
+  .phone__screen{padding:22px 16px}
 }

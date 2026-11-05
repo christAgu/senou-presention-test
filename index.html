@@ -76,27 +76,37 @@
 <ellipse cx="400" cy="510" rx="279" ry="67"/>
 <ellipse cx="400" cy="600" rx="224" ry="54"/></g>
   <g class="globe__ring"><circle cx="400" cy="400" r="330"/></g>
+  <g class="spark"><path d="M120 150 v 40 M100 170 h 40"/><path d="M690 620 v 30 M675 635 h 30"/><path d="M700 140 v 22 M689 151 h 22"/><path d="M90 560 v 26 M77 573 h 26"/></g>
   <use href="#p1" class="globe__track"/><use href="#p2" class="globe__track"/><use href="#p3" class="globe__track"/><use href="#p4" class="globe__track"/><use href="#p5" class="globe__track"/>
-  <g class="coin coin--eur"><circle r="19"/><text y="7" text-anchor="middle">€</text>
+  <g class="coin coin--eur"><circle r="34"/><circle class="coin__in" r="25"/><text y="10" text-anchor="middle">€</text><path class="coin__shine" d="M-19 -15 q 5 -11 18 -15"/>
   <animateMotion dur="9s" begin="0s" repeatCount="indefinite" rotate="0" keyPoints="0;1" keyTimes="0;1" calcMode="linear"><mpath href="#p1"/></animateMotion>
   <animate attributeName="opacity" dur="9s" begin="0s" repeatCount="indefinite" values="0;1;1;0" keyTimes="0;.12;.85;1"/></g>
-<g class="coin coin--xof"><circle r="19"/><text y="7" text-anchor="middle">F</text>
+<g class="coin coin--xof"><circle r="34"/><circle class="coin__in" r="25"/><text y="10" text-anchor="middle">F</text><path class="coin__shine" d="M-19 -15 q 5 -11 18 -15"/>
   <animateMotion dur="11s" begin="-3s" repeatCount="indefinite" rotate="0" keyPoints="0;1" keyTimes="0;1" calcMode="linear"><mpath href="#p2"/></animateMotion>
   <animate attributeName="opacity" dur="11s" begin="-3s" repeatCount="indefinite" values="0;1;1;0" keyTimes="0;.12;.85;1"/></g>
-<g class="coin coin--usd"><circle r="19"/><text y="7" text-anchor="middle">$</text>
+<g class="coin coin--usd"><circle r="34"/><circle class="coin__in" r="25"/><text y="10" text-anchor="middle">$</text><path class="coin__shine" d="M-19 -15 q 5 -11 18 -15"/>
   <animateMotion dur="13s" begin="-6s" repeatCount="indefinite" rotate="0" keyPoints="0;1" keyTimes="0;1" calcMode="linear"><mpath href="#p3"/></animateMotion>
   <animate attributeName="opacity" dur="13s" begin="-6s" repeatCount="indefinite" values="0;1;1;0" keyTimes="0;.12;.85;1"/></g>
-<g class="coin coin--gbp"><circle r="19"/><text y="7" text-anchor="middle">£</text>
+<g class="coin coin--gbp"><circle r="34"/><circle class="coin__in" r="25"/><text y="10" text-anchor="middle">£</text><path class="coin__shine" d="M-19 -15 q 5 -11 18 -15"/>
   <animateMotion dur="10s" begin="-2s" repeatCount="indefinite" rotate="0" keyPoints="0;1" keyTimes="0;1" calcMode="linear"><mpath href="#p4"/></animateMotion>
   <animate attributeName="opacity" dur="10s" begin="-2s" repeatCount="indefinite" values="0;1;1;0" keyTimes="0;.12;.85;1"/></g>
-<g class="coin coin--eur"><circle r="19"/><text y="7" text-anchor="middle">€</text>
+<g class="coin coin--eur"><circle r="34"/><circle class="coin__in" r="25"/><text y="10" text-anchor="middle">€</text><path class="coin__shine" d="M-19 -15 q 5 -11 18 -15"/>
   <animateMotion dur="12s" begin="-8s" repeatCount="indefinite" rotate="0" keyPoints="0;1" keyTimes="0;1" calcMode="linear"><mpath href="#p5"/></animateMotion>
   <animate attributeName="opacity" dur="12s" begin="-8s" repeatCount="indefinite" values="0;1;1;0" keyTimes="0;.12;.85;1"/></g>
-<g class="coin coin--xof"><circle r="19"/><text y="7" text-anchor="middle">F</text>
+<g class="coin coin--xof"><circle r="34"/><circle class="coin__in" r="25"/><text y="10" text-anchor="middle">F</text><path class="coin__shine" d="M-19 -15 q 5 -11 18 -15"/>
   <animateMotion dur="9s" begin="-4.5s" repeatCount="indefinite" rotate="0" keyPoints="0;1" keyTimes="0;1" calcMode="linear"><mpath href="#p1"/></animateMotion>
   <animate attributeName="opacity" dur="9s" begin="-4.5s" repeatCount="indefinite" values="0;1;1;0" keyTimes="0;.12;.85;1"/></g>
 
 </svg>
+        <div class="hand">
+          <svg class="hand__back" viewBox="0 0 640 820" aria-hidden="true">
+            <path class="hand__sleeve" d="M80 700 Q 320 640 600 700 L 640 820 L 60 820 Z"/>
+            <path class="hand__skin" d="M120 640 C 110 560, 150 530, 220 540 L 480 540 C 560 530, 590 580, 580 650 L 600 820 L 100 820 Z"/>
+            <rect class="hand__skin" x="400" y="310" width="112" height="56" rx="28" transform="rotate(-10 400 310)"/>
+            <rect class="hand__skin" x="405" y="380" width="120" height="56" rx="28" transform="rotate(-7 405 380)"/>
+            <rect class="hand__skin" x="405" y="450" width="116" height="56" rx="28" transform="rotate(-4 405 450)"/>
+            <rect class="hand__skin" x="400" y="520" width="104" height="54" rx="27" transform="rotate(-1 400 520)"/>
+          </svg>
         <div class="phone">
           <div class="phone__screen">
             <div class="ph-top">
@@ -121,6 +131,11 @@
               <li><div><b>Amazon.fr</b><small>Hier</small></div><em>−39,90 €</em></li>
             </ul>
           </div>
+        </div>
+          <svg class="hand__front" viewBox="0 0 640 820" aria-hidden="true">
+            <rect class="hand__skin" x="150" y="590" width="84" height="320" rx="42" transform="rotate(-18 150 590)"/>
+            <path class="hand__line" d="M178 650 C 192 668, 218 666, 230 648"/>
+          </svg>
         </div>
       </div>
     </div>
