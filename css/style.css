@@ -232,8 +232,12 @@ h3{font-size:22px;letter-spacing:-.02em;line-height:1.2}
 .globe__lines{fill:none;stroke:rgba(255,255,255,.3);stroke-width:1.2}
 .globe__ring{fill:none;stroke:rgba(170,182,230,.45);stroke-width:1;stroke-dasharray:4 14;transform-origin:400px 400px;animation:spin 90s linear infinite}
 .globe__track{fill:none;stroke:rgba(170,182,230,.35);stroke-width:1;stroke-dasharray:3 9}
-.coin circle{fill:#fff}
-.coin text{font-family:"Onest",system-ui,sans-serif;font-size:19px;font-weight:600;fill:var(--navy)}
+.coin circle{fill:#fff;stroke:rgba(255,255,255,.35);stroke-width:1.5}
+.coin text{font-family:"Onest",system-ui,sans-serif;font-size:19px;font-weight:600;fill:#fff}
+.coin--eur circle{fill:#2f6bff}
+.coin--xof circle{fill:#f2b705}
+.coin--usd circle{fill:#1fa661}
+.coin--gbp circle{fill:#8b5cf6}
 .stage .phone{position:relative;z-index:1}
 @keyframes spin{to{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.globe__ring{animation:none}}
